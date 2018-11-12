@@ -14,6 +14,7 @@ app.controller('homeCtrl', [
   ) {
 
     var vm = this;
+    vm.users = {};
 
     vm.$onInit = function(){
       console.log('home cargado');
@@ -22,5 +23,6 @@ app.controller('homeCtrl', [
       );
 
     }
+
 
   }]);
