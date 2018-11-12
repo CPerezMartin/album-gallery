@@ -1,0 +1,14 @@
+{
+  "name": "album-gallery",
+  "version": "1.0.0",
+  "description": "album-gallery",
+  "main": "app.js",
+  "dependencies": {
+    "angular-resource": "^1.7.5",
+    "angular-ui-router": "^1.0.20"
+  },
+  "devDependencies": {},
+  "scripts": {  },
+  "author": "Carlos Pérez Martín",
+  "license": "ISC"
+}
