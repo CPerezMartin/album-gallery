@@ -2,8 +2,8 @@
 ng-controller='homeCtrl as vm'>
 <h1 class="page-title">Salón de la Fama</h1>
 <div ng-repeat="user in vm.users track by $index" class="user-wrap">
-  <div class="user">
-    <div ><span>Name: </span>{{user.name}}
+  <div class="user" >
+    <button ng-click="vm.goToAlbum(user.id)"><span> {{user.name}}</span></button>
     <div><span>Email: </span>{{user.email}}</div>
     <div class="addres"><span>Address</span>
       <div><span>Street: </span>{{user.address.street}}</div>
@@ -19,5 +19,4 @@ ng-controller='homeCtrl as vm'>
     </div>
   </div>
   </div>
-</div>
 </div>

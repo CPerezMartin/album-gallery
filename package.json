@@ -4,7 +4,6 @@
   "description": "album-gallery",
   "main": "app.js",
   "dependencies": {
-    "angular-resource": "^1.7.5",
     "angular-ui-router": "^1.0.20"
   },
   "devDependencies": {},
