@@ -24,7 +24,7 @@ app.controller('homeCtrl', [
 
     vm.goToAlbum = function(id){
       sessionStorage.setItem('album',id);
-      $state.go("albumStaten");
+      $state.go("albumState");
 
     }
 

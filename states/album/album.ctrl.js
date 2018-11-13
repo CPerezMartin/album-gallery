@@ -13,4 +13,15 @@ app.controller('albumCtrl', [
     $http
   ) {
 
+    var vm = this;
+    vm.users = {};
+
+    vm.$onInit = function(){
+
+      console.log('álbum controller iniciado');
+      // $gallerySrv.getUsers().then(
+      //   data => vm.users = data
+      // );
+    }
+
   }]);

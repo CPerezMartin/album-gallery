@@ -12,7 +12,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     }
   };
   var albumState = {
-    name: "album",
+    name: "albumState",
     url: "/album",
     views: {
       content: {
