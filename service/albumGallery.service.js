@@ -37,12 +37,12 @@ app.service('$gallerySrv', [
       })
     }
 
-    vm.getPhotos = function (photoId) {
+    vm.getPhotos = function (albumId) {
       console.log('retrieving users');
-      const url = 'http://jsonplaceholder.typicode.com/albums?';
+      const url = 'http://jsonplaceholder.typicode.com/photos?';
 
       return $q(function (resolve, reject) {
-        $http.get(url,photoId).success(function (data) {
+        $http.get(url,albumId).success(function (data) {
 
           if (data) {
             resolve(data);
@@ -52,5 +52,8 @@ app.service('$gallerySrv', [
         });        
       })
     }
+
+    vm.getStateParams = function(){return this.stateParams};
+
   }
 ]);

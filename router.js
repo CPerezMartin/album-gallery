@@ -20,9 +20,19 @@ app.config(function($stateProvider, $urlRouterProvider) {
       }
     }
   };
+  var photoState = {
+    name: "photoState",
+    url: "/photo",
+    views: {
+      content: {
+        templateUrl: "./states/photo/photo.html"
+      }
+    }
+  };
 
   $stateProvider
     .state(homeState)
-    .state(albumState);
+    .state(albumState)
+    .state(photoState);
   $urlRouterProvider.otherwise("/home");
 });

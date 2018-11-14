@@ -14,14 +14,25 @@ app.controller('albumCtrl', [
   ) {
 
     var vm = this;
-    vm.users = {};
+    vm.albums = {}
+
+    this.stateParams = null;
+   
 
     vm.$onInit = function(){
 
       console.log('álbum controller iniciado');
-      // $gallerySrv.getUsers().then(
-      //   data => vm.users = data
-      // );
+      vm.id = sessionStorage.getItem('album');
+      $gallerySrv.getAlbums(vm.id).then(
+        data => vm.albums = data
+      );
+    }
+
+    vm.goToPhoto = function(id){
+      sessionStorage.setItem('photo',id);
+      this.stateParams = id;
+      $state.go("PhotoState");
+
     }
 
   }]);
