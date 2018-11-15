@@ -8,7 +8,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "run-serve": "sass styles\\scss\\style.scss styles\\css\\style.css && http-server"
+    "serve": "sass styles\\scss\\style.scss styles\\css\\style.css && http-server",
+    "build": "sass styles\\scss\\style.scss styles\\css\\style.css"
     },
   "author": "Carlos Pérez Martín",
   "license": "ISC"
