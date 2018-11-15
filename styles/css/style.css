@@ -117,5 +117,9 @@ html {
 #album-state .container .album-item .btn:first-letter {
   text-transform: capitalize;
 }
+#album-state .container .album-item .btn:hover {
+  background-color: #45bcc9;
+  border-color: #002b3d;
+}
 
 /*# sourceMappingURL=style.css.map */
