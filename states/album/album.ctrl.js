@@ -29,8 +29,8 @@ app.controller('albumCtrl', [
     }
 
     vm.goToPhoto = function(id){
-      this.stateParams = id;
-      $state.go("PhotoState");
+      $gallerySrv.setStateParams({albumId:id});
+      $state.go("photoState");
 
     }
 

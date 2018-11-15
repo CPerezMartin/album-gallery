@@ -122,4 +122,31 @@ html {
   border-color: #002b3d;
 }
 
+#photo-state .photo {
+  position: relative;
+  float: left;
+  margin: 0.5em;
+  width: 30%;
+  min-width: 300px;
+  text-align: left;
+  background-color: #45bcc9;
+  border-radius: 10px;
+  border: double;
+}
+#photo-state .photo .photo-lbl .photo-txt {
+  position: relative;
+  float: left;
+  word-break: break-all;
+  color: #002b3d;
+  font-size: 18px;
+  font-weight: bold;
+  width: 20em;
+}
+#photo-state .photo .photo-lbl .photo-img {
+  position: relative;
+  width: 150px;
+  float: right;
+  margin: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
