@@ -29,7 +29,6 @@ app.controller('albumCtrl', [
     }
 
     vm.goToPhoto = function(id){
-      sessionStorage.setItem('photo',id);
       this.stateParams = id;
       $state.go("PhotoState");
 

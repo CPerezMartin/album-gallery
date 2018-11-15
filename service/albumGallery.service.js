@@ -21,12 +21,12 @@ app.service('$gallerySrv', [
       })
     }
 
-    vm.getAlbums = function (albumId) {
+    vm.getAlbums = function (id) {
       console.log('retrieving users');
       const url = 'http://jsonplaceholder.typicode.com/albums?';
 
       return $q(function (resolve, reject) {
-        $http.get(url,albumId).success(function (data) {
+        $http.get(url,{params:{userId:id}}).success(function (data) {
 
           if (data) {
             resolve(data);
