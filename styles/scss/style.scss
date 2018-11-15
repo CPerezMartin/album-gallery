@@ -1,24 +1,70 @@
-$primary-background-color: #002b3d;
-  $primary-color: #45bcc9;
+$secondary-color: #002b3d;
+$primary-color: #45bcc9;
 
+// General elements
+
+html {
+  font-family: sans-serif;
+}
+
+.btn {
+  font-family: sans-serif;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 5px;
+  width: fit-content;
+  box-shadow: none;
+  border: 1px solid $primary-color;
+  color: white;
+  background-color: $primary-color;
+  line-height: 1.4em;
+  min-width: fit-content;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $secondary-color;
+  }
+
+  &:active {
+    box-shadow: 0px 0px 2px 2px $primary-color;
+  }
+}
+
+.btn-white {
+  background-color: white;
+  color: #45bcc9;
+  font-weight: bold;
+  border-color: white;
+
+  &:hover {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+
+  &:active {
+    box-shadow: 0px 0px 2px 2px $secondary-color;
+  }
+}
+
+
+// States
+
+// Main
 #main-body {
-  background-color: $primary-background-color;
+  background-color: $secondary-color;
   color: $primary-color;
 }
 
+// Home
 #home-state {
   .page-title {
     text-align: center;
   }
-}
 
-#home-state {
   .user-wrap {
     margin: 0 auto;
   }
-}
 
-#home-state {
   .user {
     min-width: fit-content;
     color: white;
@@ -27,17 +73,42 @@ $primary-background-color: #002b3d;
     border-radius: 10px;
     padding: 1em;
     margin: 0 auto 0.5em auto;
-    width: 250px;
+    width: 18em;
     position: relative;
     float: left;
     margin: 1em;
     display: block;
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 1.4em;
+
+    .lbl-name {
+      text-align: center;
+      font-size: larger;
+      font-weight: bolder;
+      margin-bottom: 1em;
+      background-color: white;
+      color: #45bcc9;
+      padding-top: 0.4em;
+      padding-bottom: 0.4em;
+      border-radius: 7px;
+    }
+
+    span {
+      font-weight: bold;
+    }
+
+    .btn-row {
+      text-align: center;
+      padding: 5px;
+      margin-top: 1em;
+
+      .btn {
+        padding: 0.5em 2em;
+        font-size: large;
+      }
+    }
   }
 }
 
-#home-state {
-  .user span {
-    font-weight: bold;
-  }
-}
+// Album
+

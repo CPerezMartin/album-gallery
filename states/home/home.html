@@ -1,9 +1,9 @@
 <div id='home-state'
 ng-controller='homeCtrl as vm'>
-<h1 class="page-title">Salón de la Fama</h1>
+<h1 class="page-title">Hall of Fame</h1>
 <div ng-repeat="user in vm.users track by $index" class="user-wrap">
   <div class="user" >
-    <div ><span> {{user.name}}</span></div>
+    <div class="lbl-name"><span> {{user.name}}</span></div>
     <div><span>Email: </span>{{user.email}}</div>
     <div class="addres"><span>Address</span>
       <div><span>Street: </span>{{user.address.street}}</div>
@@ -16,7 +16,9 @@ ng-controller='homeCtrl as vm'>
     <div><span>Company:</span> {{user.company.name}}
       <div>{{user.company.catchPhrase}}</div>
       <div><span>Bs: </span> {{user.company.bs}}</div>
-      <button ng-click="vm.goToAlbum(user.id)">Album</button>
+      <div class="btn-row">
+      <button class="btn btn-white" ng-click="vm.goToAlbum(user.id)">Album</button>
+    </div>
     </div>
   </div>
   </div>
