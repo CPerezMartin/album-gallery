@@ -1,0 +1,91 @@
+html {
+  font-family: sans-serif;
+}
+
+.btn {
+  font-family: sans-serif;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 5px;
+  width: fit-content;
+  box-shadow: none;
+  border: 1px solid #45bcc9;
+  color: white;
+  background-color: #45bcc9;
+  line-height: 1.4em;
+  min-width: fit-content;
+}
+.btn:hover {
+  background-color: #45bcc9;
+  color: #002b3d;
+}
+.btn:active {
+  box-shadow: 0px 0px 2px 2px #45bcc9;
+}
+
+.btn-white {
+  background-color: white;
+  color: #45bcc9;
+  font-weight: bold;
+  border-color: white;
+}
+.btn-white:hover {
+  background-color: #002b3d;
+  color: #45bcc9;
+}
+.btn-white:active {
+  box-shadow: 0px 0px 2px 2px #002b3d;
+}
+
+#main-body {
+  background-color: #002b3d;
+  color: #45bcc9;
+}
+
+#home-state .page-title {
+  text-align: center;
+}
+#home-state .user-wrap {
+  margin: 0 auto;
+}
+#home-state .user {
+  min-width: fit-content;
+  color: white;
+  border: none;
+  background-color: #45bcc9;
+  border-radius: 10px;
+  padding: 1em;
+  margin: 0 auto 0.5em auto;
+  width: 18em;
+  position: relative;
+  float: left;
+  margin: 1em;
+  display: block;
+  font-size: 18px;
+  line-height: 1.4em;
+}
+#home-state .user .lbl-name {
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+  margin-bottom: 1em;
+  background-color: white;
+  color: #45bcc9;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  border-radius: 7px;
+}
+#home-state .user span {
+  font-weight: bold;
+}
+#home-state .user .btn-row {
+  text-align: center;
+  padding: 5px;
+  margin-top: 1em;
+}
+#home-state .user .btn-row .btn {
+  padding: 0.5em 2em;
+  font-size: large;
+}
+
+/*# sourceMappingURL=style.css.map */
