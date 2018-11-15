@@ -1,5 +1,5 @@
 <div id="album-state" ng-controller="albumCtrl as vm">
-   <h1>Album</h1>
+   <h1 class="title">Album</h1>
    <div class="container">
    <div ng-repeat="album in vm.albums track by $index" class="album-item">
          <button class="btn" ng-click="vm.goToPhoto(album.id)">
