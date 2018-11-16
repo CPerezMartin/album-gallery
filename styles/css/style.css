@@ -131,7 +131,8 @@ html {
   text-align: left;
   background-color: #45bcc9;
   border-radius: 10px;
-  border: double;
+  border: none;
+  height: 160px;
 }
 #photo-state .photo .photo-item .photo-txt {
   position: relative;
@@ -143,9 +144,9 @@ html {
   width: 20em;
 }
 #photo-state .photo .photo-item .photo-img {
-  position: relative;
   width: 150px;
   float: right;
+  border-radius: 9px;
   margin: 0;
 }
 

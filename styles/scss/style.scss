@@ -163,7 +163,8 @@ html {
     text-align: left;
     background-color: $primary-color;
     border-radius: 10px;
-    border: double;
+    border: none;
+    height: 160px;
 
     .photo-item {
       .photo-txt {
@@ -177,9 +178,9 @@ html {
       }
 
       .photo-img {
-        position: relative;
         width: 150px;
         float: right;
+        border-radius: 9px;
         margin: 0;
       }
     }
