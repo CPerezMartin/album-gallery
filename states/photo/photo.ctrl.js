@@ -24,6 +24,10 @@ app.controller('photoCtrl', [
         data => vm.photos = data
       )
 
+      vm.goToUrl = function(url) {
+        window.location.href= encodeURI(url);
+      }
+
       //  vm.encodePhotoList = function (list) {
       //   let output = {};
       //   for (item in list) {
