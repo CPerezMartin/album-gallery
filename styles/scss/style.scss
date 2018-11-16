@@ -170,7 +170,7 @@ html {
       .photo-txt {
         position: relative;
         float: left;
-        word-break: break-all;
+        word-break: break-word;
         color: $secondary-color;
         font-size: 18px;
         font-weight: bold;
