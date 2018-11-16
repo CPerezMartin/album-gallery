@@ -133,7 +133,7 @@ html {
   border-radius: 10px;
   border: double;
 }
-#photo-state .photo .photo-lbl .photo-txt {
+#photo-state .photo .photo-item .photo-txt {
   position: relative;
   float: left;
   word-break: break-all;
@@ -142,7 +142,7 @@ html {
   font-weight: bold;
   width: 20em;
 }
-#photo-state .photo .photo-lbl .photo-img {
+#photo-state .photo .photo-item .photo-img {
   position: relative;
   width: 150px;
   float: right;
