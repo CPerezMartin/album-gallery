@@ -1,0 +1,153 @@
+html {
+  font-family: sans-serif;
+}
+
+.btn {
+  font-family: sans-serif;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 5px;
+  width: fit-content;
+  box-shadow: none;
+  border: 1px solid #45bcc9;
+  color: white;
+  background-color: #45bcc9;
+  line-height: 1.4em;
+  min-width: fit-content;
+}
+.btn:hover {
+  background-color: #45bcc9;
+  color: #002b3d;
+}
+.btn:active {
+  box-shadow: 0px 0px 2px 2px #45bcc9;
+}
+
+.btn-white {
+  background-color: white;
+  color: #45bcc9;
+  font-weight: bold;
+  border-color: white;
+}
+.btn-white:hover {
+  background-color: #002b3d;
+  color: #45bcc9;
+}
+.btn-white:active {
+  box-shadow: 0px 0px 2px 2px #002b3d;
+}
+
+#main-body {
+  background-color: #002b3d;
+  color: #45bcc9;
+}
+
+#home-state .page-title {
+  text-align: center;
+}
+#home-state .user-wrap {
+  margin: 0 auto;
+}
+#home-state .user {
+  min-width: fit-content;
+  color: white;
+  border: none;
+  background-color: #45bcc9;
+  border-radius: 10px;
+  padding: 1em;
+  margin: 0 auto 0.5em auto;
+  width: 18em;
+  position: relative;
+  float: left;
+  margin: 1em;
+  display: block;
+  font-size: 18px;
+  line-height: 1.4em;
+}
+#home-state .user .lbl-name {
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+  margin-bottom: 1em;
+  background-color: white;
+  color: #45bcc9;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  border-radius: 7px;
+}
+#home-state .user span {
+  font-weight: bold;
+}
+#home-state .user .btn-row {
+  text-align: center;
+  padding: 5px;
+  margin-top: 1em;
+}
+#home-state .user .btn-row .btn {
+  padding: 0.5em 2em;
+  font-size: large;
+}
+
+#album-state .title {
+  text-align: center;
+}
+#album-state .container {
+  max-width: fit-content;
+  width: 45%;
+  border: double;
+  border-radius: 10px;
+  margin: 0 auto;
+  background-color: #45bcc9;
+}
+#album-state .container .album-item {
+  margin: 1px;
+  width: auto;
+  text-align: left;
+  background-color: #45bcc9;
+  border-radius: 10px;
+}
+#album-state .container .album-item .btn {
+  padding: 0.5em 1em;
+  font-size: 18px;
+  text-align: left;
+  width: 100%;
+  background-color: #002b3d;
+  border-radius: 10px;
+}
+#album-state .container .album-item .btn:first-letter {
+  text-transform: capitalize;
+}
+#album-state .container .album-item .btn:hover {
+  background-color: #45bcc9;
+  border-color: #002b3d;
+}
+
+#photo-state .photo {
+  position: relative;
+  float: left;
+  margin: 0.5em;
+  width: 30%;
+  min-width: 300px;
+  text-align: left;
+  background-color: #45bcc9;
+  border-radius: 10px;
+  border: none;
+  height: 160px;
+}
+#photo-state .photo .photo-item .photo-txt {
+  position: relative;
+  float: left;
+  word-break: break-all;
+  color: #002b3d;
+  font-size: 18px;
+  font-weight: bold;
+  width: 20em;
+}
+#photo-state .photo .photo-item .photo-img {
+  width: 150px;
+  float: right;
+  border-radius: 9px;
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

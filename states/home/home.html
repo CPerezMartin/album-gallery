@@ -1,5 +1,25 @@
 <div id='home-state'
 ng-controller='homeCtrl as vm'>
-<h1>Home</h1>
-<div ng-repeat="user in vm.users track by $index">{{user}}</div>
+<h1 class="page-title">Hall of Fame</h1>
+<div ng-repeat="user in vm.users track by $index" class="user-wrap">
+  <div class="user" >
+    <div class="lbl-name"><span> {{user.name}}</span></div>
+    <div><span>Email: </span>{{user.email}}</div>
+    <div class="addres"><span>Address</span>
+      <div><span>Street: </span>{{user.address.street}}</div>
+      <div><span>Suite: </span>{{user.address.suite}}</div>
+      <div><span>City: </span>{{user.address.city}}</div>
+      <div><span>Zipcode: </span>{{user.address.zipcode}}</div>
+    </div>
+    <div><span>Phone:</span> {{user.phone}}</div>
+    <div><span>Website:</span> {{user.website}}</div>
+    <div><span>Company:</span> {{user.company.name}}
+      <div>{{user.company.catchPhrase}}</div>
+      <div><span>Bs: </span> {{user.company.bs}}</div>
+      <div class="btn-row">
+      <button class="btn btn-white" ng-click="vm.goToAlbum(user.id)">Album</button>
+    </div>
+    </div>
+  </div>
+  </div>
 </div>

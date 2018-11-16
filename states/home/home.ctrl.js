@@ -14,13 +14,19 @@ app.controller('homeCtrl', [
   ) {
 
     var vm = this;
+    vm.users = {};
 
     vm.$onInit = function(){
-      console.log('home cargado');
       $gallerySrv.getUsers().then(
         data => vm.users = data
       );
+    }
+
+    vm.goToAlbum = function(id){
+      sessionStorage.setItem('album',id);
+      $state.go("albumState");
 
     }
+
 
   }]);

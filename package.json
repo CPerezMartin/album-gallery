@@ -4,11 +4,13 @@
   "description": "album-gallery",
   "main": "app.js",
   "dependencies": {
-    "angular-resource": "^1.7.5",
     "angular-ui-router": "^1.0.20"
   },
   "devDependencies": {},
-  "scripts": {  },
+  "scripts": {
+    "serve": "sass styles\\scss\\style.scss styles\\css\\style.css && http-server",
+    "build": "sass styles\\scss\\style.scss styles\\css\\style.css"
+    },
   "author": "Carlos Pérez Martín",
   "license": "ISC"
 }

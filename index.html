@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="es-ES">
+  <!-- http://embed.plnkr.co/D8ikkz/ -->
+<!-- angular -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.11/angular.js"></script>
-<!-- <script src="./node_modules/angular-resource/angular-resource.js"></script> -->
 <script src="./node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+
+<!-- core -->
 <script src="./app.js"></script>
 <script src="./router.js"></script>
+<link href="./styles/css/style.css" rel="stylesheet">
 
-<!-- states -->
+<!-- controllers -->
 <script src="./states/home/home.ctrl.js"></script>
+<script src="./states/album/album.ctrl.js"></script>
+<script src="./states/photo/photo.ctrl.js"></script>
 
 <!-- services -->
 <script src="./service/albumGallery.service.js"></script>
 
-<body>
+<body id="main-body">
 
-  <div data-ng-app="albumGalleryApp">
-
-    <h1>Salón de la Fama</h1>
+  <div data-ng-app="albumGalleryApp" id="main">
 
     <div ui-view="content" class="ng-scope">
     </div>
