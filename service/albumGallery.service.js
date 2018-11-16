@@ -7,12 +7,20 @@ app.service('$gallerySrv', [
 
     vm.stateParams = {};
 
-
+    /**
+     * @description set params in custom 'stateParams' service
+     * @param JSON object with key:value to save in stateparams
+     * @return nothing. Objects are keep in vm.stateParams at gallerySrv
+     */
     vm.setStateParams = function (params) {
       vm.stateParams = params;
       console.log('stateParams: ', vm.stateParams);
     }
 
+    /**
+     * @description retrieve objects in gallerySrv stateParmas
+     * @return all data in stateParams. It should be JSON objects
+     */
     vm.getStateParams = function () {
       return vm.setStateParams
     };
@@ -34,7 +42,7 @@ app.service('$gallerySrv', [
       })
     }
 
-    vm.getAlbums = function(id) {
+    vm.getAlbums = function (id) {
       const url = 'http://jsonplaceholder.typicode.com/albums?';
 
       return $q(function (resolve, reject) {
@@ -53,7 +61,7 @@ app.service('$gallerySrv', [
       })
     }
 
-    vm.getPhotos = function(id) {
+    vm.getPhotos = function (id) {
       const url = 'http://jsonplaceholder.typicode.com/photos?';
 
       return $q(function (resolve, reject) {
@@ -64,20 +72,9 @@ app.service('$gallerySrv', [
         }).success(function (data) {
 
           if (data) {
-            // let output = [];
-            // let item = {};
-            // let x = {};
-            // data.forEach(item => {
-            //   x.id = item.id;
-            //   x.albumId = item.albumId;
-            //   x.title = item.title,
-            //   x.thumbnailUrl = item.thumbnailUrl;
-            //   x.url = new URL(item.url);
-            //   output.push(x);
-            // });
-            
-              resolve(data)
-            
+
+            resolve(data)
+
           } else {
             reject('error');
           }
