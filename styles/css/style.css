@@ -122,4 +122,32 @@ html {
   border-color: #002b3d;
 }
 
+#photo-state .photo {
+  position: relative;
+  float: left;
+  margin: 0.5em;
+  width: 30%;
+  min-width: 300px;
+  text-align: left;
+  background-color: #45bcc9;
+  border-radius: 10px;
+  border: none;
+  height: 160px;
+}
+#photo-state .photo .photo-item .photo-txt {
+  position: relative;
+  float: left;
+  word-break: break-all;
+  color: #002b3d;
+  font-size: 18px;
+  font-weight: bold;
+  width: 20em;
+}
+#photo-state .photo .photo-item .photo-img {
+  width: 150px;
+  float: right;
+  border-radius: 9px;
+  margin: 0;
+}
+
 /*# sourceMappingURL=style.css.map */

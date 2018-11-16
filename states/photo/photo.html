@@ -1,8 +1,9 @@
 <div id="photo-state" ng-controller="photoCtrl as vm">
       <h1>Photo</h1>
-      <div ng-repeat="photo in vm.photos track by $index" class="photo-wrap">
-            <button>
-               {{photo.title}}
+      <button ng-repeat="photo in vm.photos track by $index" class="photo" ng-click="vm.goToUrl(photo.url)">
+            <div  class="photo-item">
+            <p class="photo-txt">{{photo.title}}</p>
+                  <img src="{{photo.thumbnailUrl}}" alt="{{photo.title}}" class="photo-img">
+            </div>
             </button>
-   </div>
    

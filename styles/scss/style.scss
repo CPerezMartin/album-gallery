@@ -112,12 +112,12 @@ html {
 
 // Album
 
-#album-state{
-  .title{
+#album-state {
+  .title {
     text-align: center;
   }
-  
-  .container{
+
+  .container {
     max-width: fit-content;
     width: 45%;
     border: double;
@@ -125,28 +125,64 @@ html {
     margin: 0 auto;
     background-color: $primary-color;
 
-    .album-item{
+    .album-item {
       margin: 1px;
       width: auto;
       text-align: left;
       background-color: $primary-color;
       border-radius: 10px;
 
-    .btn{
-      padding: 0.5em 1em;
-    font-size: 18px;
+      .btn {
+        padding: 0.5em 1em;
+        font-size: 18px;
+        text-align: left;
+        width: 100%;
+        background-color: $secondary-color;
+        border-radius: 10px;
+
+        &:first-letter {
+          text-transform: capitalize;
+        }
+
+        &:hover {
+          background-color: $primary-color;
+          border-color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+
+#photo-state {
+  .photo {
+    position: relative;
+    float: left;
+    margin: 0.5em;
+    width: 30%;
+    min-width: 300px;
     text-align: left;
-    width: 100%;
-    background-color: $secondary-color;
+    background-color: $primary-color;
     border-radius: 10px;
-    &:first-letter{
-      text-transform: capitalize;
-    }
-    &:hover{
-      background-color: $primary-color;
-      border-color: $secondary-color;
-    }
-    }
+    border: none;
+    height: 160px;
+
+    .photo-item {
+      .photo-txt {
+        position: relative;
+        float: left;
+        word-break: break-all;
+        color: $secondary-color;
+        font-size: 18px;
+        font-weight: bold;
+        width: 20em;
+      }
+
+      .photo-img {
+        width: 150px;
+        float: right;
+        border-radius: 9px;
+        margin: 0;
+      }
     }
   }
 }

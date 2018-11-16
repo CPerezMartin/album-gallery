@@ -14,17 +14,28 @@ app.controller('photoCtrl', [
   ) {
 
     var vm = this;
-    vm.photo ='';
-   
+    vm.photo = '';
 
-    vm.$onInit = function(){
 
-      console.log('álbum controller iniciado');
-      // vm.id = sessionStorage.getItem('photo');
-      vm.id = $gallerySrv.getStateParams();
-      $gallerySrv.getphotos(vm.id).then(
+    vm.$onInit = function () {
+
+      var stateParams = $gallerySrv.getStateParams();
+      $gallerySrv.getPhotos(stateParams.albumId).then(
         data => vm.photos = data
-      );
-    }
+      )
 
-  }]);
+      vm.goToUrl = function(url) {
+        window.location.href= encodeURI(url);
+      }
+
+      //  vm.encodePhotoList = function (list) {
+      //   let output = {};
+      //   for (item in list) {
+      //     output = item;
+      //     output.url = encodeURL(item.url);
+      //     vm.encodePhotoList.push(output);
+      //   }
+      // }
+    }
+  }
+]);
