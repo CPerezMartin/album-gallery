@@ -37,6 +37,20 @@ html {
   box-shadow: 0px 0px 2px 2px #002b3d;
 }
 
+.btn-dark {
+  background-color: #002b3d;
+  color: white;
+  font-weight: bold;
+  border-color: #002b3d;
+}
+.btn-dark:hover {
+  background-color: #002b3d;
+  color: #45bcc9;
+}
+.btn-dark:active {
+  box-shadow: 0px 0px 2px 2px #002b3d;
+}
+
 #main-body {
   background-color: #002b3d;
   color: #45bcc9;
@@ -74,6 +88,10 @@ html {
   padding-top: 0.4em;
   padding-bottom: 0.4em;
   border-radius: 7px;
+}
+#home-state .user .address {
+  margin-top: 1em;
+  border-top: 1px solid white;
 }
 #home-state .user span {
   font-weight: bold;
@@ -122,6 +140,9 @@ html {
   border-color: #002b3d;
 }
 
+#photo-state .title {
+  text-align: center;
+}
 #photo-state .photo {
   position: relative;
   float: left;
