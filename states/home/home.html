@@ -5,19 +5,19 @@ ng-controller='homeCtrl as vm'>
   <div class="user" >
     <div class="lbl-name"><span> {{user.name}}</span></div>
     <div><span>Email: </span>{{user.email}}</div>
-    <div class="addres"><span>Address</span>
+    <div><span>Phone:</span> {{user.phone}}</div>
+    <div><span>Website:</span> {{user.website}}</div>
+    <div class="address"><span>Address</span>
       <div><span>Street: </span>{{user.address.street}}</div>
       <div><span>Suite: </span>{{user.address.suite}}</div>
       <div><span>City: </span>{{user.address.city}}</div>
       <div><span>Zipcode: </span>{{user.address.zipcode}}</div>
     </div>
-    <div><span>Phone:</span> {{user.phone}}</div>
-    <div><span>Website:</span> {{user.website}}</div>
     <div><span>Company:</span> {{user.company.name}}
       <div>{{user.company.catchPhrase}}</div>
       <div><span>Bs: </span> {{user.company.bs}}</div>
       <div class="btn-row">
-      <button class="btn btn-white" ng-click="vm.goToAlbum(user.id)">Album</button>
+      <button class="btn btn-dark" ng-click="vm.goToAlbum(user.id)">Album</button>
     </div>
     </div>
   </div>
